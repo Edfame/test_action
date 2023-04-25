@@ -3,6 +3,11 @@ def simple_sum(a, b):
     return a + b
 
 
+def simple_sub(a, b):
+
+    return a - b
+
+
 def main():
 
     print(simple_sum(5, 6))
