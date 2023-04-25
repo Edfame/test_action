@@ -1,6 +1,8 @@
 name: Test Python Pull Request to main
 
 on:
+  push:
+    branches: ["main"]
   pull_request:
     branches: ["main"]
 
@@ -28,4 +30,4 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Test with pytest
-        run: pytest
+        run: pytest -v
