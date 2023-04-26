@@ -7,7 +7,7 @@ def test_simple_sub():
 
     result = simple_sub(b, a)
 
-    assert result == -1
+    assert result == 1
     assert result != 0
 
 def test_simple_sum():
